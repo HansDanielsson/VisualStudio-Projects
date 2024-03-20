@@ -396,3 +396,13 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+AngSubmit-VS/
+angular-phonecat/
+BankSystem/
+BookDemo/
+FizzBuzz10/
+FizzBuzz20/
+FizzBuzz30/
+Kundvagn-VS/
+Linq-HD-Test/
