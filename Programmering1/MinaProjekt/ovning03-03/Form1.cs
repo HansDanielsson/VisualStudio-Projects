@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ovning03_02
+namespace ovning03_03
 {
 	public partial class Form1 : Form
 	{
@@ -19,12 +19,15 @@ namespace ovning03_02
 
 		private void BtnRun_Click(object sender, EventArgs e)
 		{
-			int tal1 = int.Parse(tbxTal1.Text);
-			int tal2 = int.Parse(tbxTal2.Text);
+			int talA = int.Parse(tbxA.Text);
+			int talB = int.Parse(tbxB.Text);
+			int talC = int.Parse(tbxC.Text);
 
-			int summa = tal1 + tal2;
-			string strSumma = summa.ToString();
-			lblSumma.Text = strSumma;
+			int summan = talA + talB + talC;
+			double medelSumma = summan / 3.0;
+
+			lblSumma.Text = "Summan: " + summan.ToString();
+			lblMedel.Text = "Medelvärde: " + medelSumma.ToString();
 		}
 	}
 }

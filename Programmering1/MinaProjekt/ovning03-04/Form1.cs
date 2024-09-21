@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ovning03_02
+namespace ovning03_04
 {
 	public partial class Form1 : Form
 	{
@@ -19,12 +19,7 @@ namespace ovning03_02
 
 		private void BtnRun_Click(object sender, EventArgs e)
 		{
-			int tal1 = int.Parse(tbxTal1.Text);
-			int tal2 = int.Parse(tbxTal2.Text);
-
-			int summa = tal1 + tal2;
-			string strSumma = summa.ToString();
-			lblSumma.Text = strSumma;
+			lblSvar.Text = tbxEngelska.Text + " betyder " + tbxSvenska.Text + " på svenska.";
 		}
 	}
 }
