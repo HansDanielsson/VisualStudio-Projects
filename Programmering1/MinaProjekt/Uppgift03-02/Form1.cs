@@ -16,5 +16,13 @@ namespace Uppgift03_02
 		{
 			InitializeComponent();
 		}
+
+		private void BtnRun_Click(object sender, EventArgs e)
+		{
+			int kod = int.Parse(tbxCharNr.Text);
+			char kA = (char)kod;
+
+			tbxResult.Text = kA.ToString();
+		}
 	}
 }
